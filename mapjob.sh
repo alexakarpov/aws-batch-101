@@ -28,7 +28,7 @@ done
 echo $Fib
 echo "{\"jobID\": {\"S\": \"$AWS_BATCH_JOB_ID\"}, \"Fibi\": {\"S\": \"$Fib\"}}" > item.json
 cat item.json
-RESP=$(aws dynamodb put-item --region us-east-1 --table-name fetch_and_run --item file://item.json)
+RESP=$(aws dynamodb put-item --region ca-central-1 --table-name d4b --item file://item.json)
 echo $RESP
 
 sleep 1
