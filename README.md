@@ -13,3 +13,7 @@ There's a guide that explains everything that this repo contains, you can check 
 ○ → aws --profile bob kms decrypt --ciphertext-blob fileb://encrypted.txt --query Plaintext --output text | base64 -D
 qwerty asdfgh zxcvbn
 ```
+
+
+###also check this out
+https://aws.amazon.com/blogs/compute/managing-secrets-for-amazon-ecs-applications-using-parameter-store-and-iam-roles-for-tasks/
