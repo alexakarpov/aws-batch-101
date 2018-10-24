@@ -1,6 +1,6 @@
-FROM amazonlinux:latest
-RUN yum -y install which aws-cli
+FROM alpine:latest
 WORKDIR /tmp
+RUN apk add postgresql
 ADD credentials .
 ADD scripts .
 COPY run.sh .
